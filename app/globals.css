@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+/* Base dark theme */
+body { @apply bg-black text-zinc-100 antialiased; }
+
+/* Reusable primitives */
+@layer components {
+  .container { @apply max-w-6xl mx-auto; }
+  .card { @apply bg-zinc-900/60 rounded-2xl p-5 border border-zinc-800 hover:border-zinc-700 transition; }
+  .nav-link { @apply text-accent hover:underline; }
+  .btn-accent { @apply bg-accent text-accent-fg font-semibold px-4 py-2 rounded-full transition hover:bg-accent-dark; }
+  .btn-ghost { @apply bg-zinc-800/60 text-zinc-100 border border-zinc-700 rounded-full px-4 py-2 hover:bg-zinc-700; }
+}
+
+/* Utilities for header active link */
+.header-link { @apply text-zinc-300 hover:text-white transition; }
+.header-link-active { @apply text-accent; }
+.site-title { @apply text-xl font-semibold tracking-tight; }
+.header { @apply border-b border-zinc-800 bg-black/80 backdrop-blur; }
+.footer { @apply border-t border-zinc-800 bg-black/80; }
