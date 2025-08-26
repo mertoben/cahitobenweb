@@ -12,8 +12,8 @@ body { @apply bg-black text-zinc-100 antialiased; }
 /* Reusable primitives */
 @layer components {
   .container { @apply max-w-6xl mx-auto; }
-  .card { @apply bg-zinc-900/60 rounded-2xl p-5 border border-zinc-800 hover:border-zinc-700 transition; }
-  .nav-link { @apply text-accent hover:underline; }
+  .card { @apply bg-zinc-900/60 border border-zinc-800 rounded-xl p-4; }
+  .nav-link { @apply text-accent hover:underline; }  /* text-accent Tailwind config’de tanımlı */
   .btn-accent { @apply bg-accent text-accent-fg font-semibold px-4 py-2 rounded-full transition hover:bg-accent-dark; }
   .btn-ghost { @apply bg-zinc-800/60 text-zinc-100 border border-zinc-700 rounded-full px-4 py-2 hover:bg-zinc-700; }
 }
